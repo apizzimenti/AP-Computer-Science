@@ -1,0 +1,49 @@
+//	Anthony Pizzimenti
+//
+//	quickSort function
+
+public class quickSort
+{
+  private int[]a;
+  
+  public quickSort(int[]arr)
+  {
+    a = arr;
+  }
+  
+  public void sort(int from, int to)
+  {
+    if(from >= to)
+      return;
+    
+    int p = partition(from, to);
+    sort(from, p);
+    sort(p+1, to);
+  }
+  
+  private int partition(int from, int to)
+  {
+    int temp;
+    int pivot = a[from];
+    int i = from-1;
+    int j = to+1;
+    
+    while(i<j)
+    {
+      i++;
+      while(a[i] < pivot)
+        i++;
+      j--;
+      while(a[j] > pivot)
+        j--;
+      
+      if(i<j)
+      {
+        temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+      }
+    }
+    return j;
+  }
+}
