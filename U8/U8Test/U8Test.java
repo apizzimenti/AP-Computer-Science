@@ -2,7 +2,7 @@
 //
 /*  reads, generates, and sorts a list of basketball players' stats. */
 //  for AP, my best friend.
-/*  ---------------------------------------------------------------- */
+/*  ----------------------- */
 
 import java.util.*;
 import javax.swing.*;
@@ -31,7 +31,7 @@ public class U8Test extends JFrame {
     public void generate() {
         try {
             Scanner reader = new Scanner(new File(
-                "C:\\Users\\Anthony\\Dropbox\\Comp Sci\\U8\\U8Test\\u7test.txt"
+                "C:\\Users\\westsh\\Dropbox\\Comp Sci\\U8\\U8Test\\u7test.txt"
                 ));
 
             while(reader.hasNext()) {

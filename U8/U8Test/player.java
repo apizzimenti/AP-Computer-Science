@@ -1,7 +1,7 @@
 //  Anthony Pizzimenti
 /*  player class, with default constructor and accessor methods */
 //  for AP, my best friend
-/*  ----------------------------------------------------------- */
+/*  ---------------------- */
 
 public class player {
 
