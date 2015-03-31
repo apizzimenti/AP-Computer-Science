@@ -28,4 +28,4 @@ and binary search methods; Big O; applying these methods to arrays
 2-D Arrays: generating mathematical models of the game of life, an election, and solving a system of equations using matrices
 
 ####Unit 8
-Advanced Classes: using ``private``, ``static``, and ``final`` variable types; arraylists; 
+Advanced Classes: using ``private``, ``static``, and ``final`` variable types; arraylists; reading from and writing to files;
