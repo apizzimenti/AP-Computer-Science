@@ -1,7 +1,7 @@
 //  Anthony Pizzimenti
 //
 /*  driver class for the bankaccount() class which generates
-	new bank account info from a text file
+ new bank account info from a text file
 */
 //  for AP, my best friend.
 /*  ---------------------- */
@@ -12,6 +12,7 @@ import java.io.*;
 import java.awt.*;
 
 public class U8A2 extends JFrame {
+    
     private ArrayList<bankaccount> accounts = new ArrayList<bankaccount>();
     private JTextArea area = new JTextArea();
     private Container contain = getContentPane();
@@ -45,7 +46,7 @@ public class U8A2 extends JFrame {
         try {
             Scanner read = new Scanner(new File(
              "C:\\Users\\Anthony\\Dropbox\\Comp Sci\\U8\\U8A2\\myCreditUnion.txt"
-            	));
+             ));
             while (read.hasNext()) {
                 String[] data = new String[1];
                 String input = read.nextLine();
@@ -161,7 +162,7 @@ public class U8A2 extends JFrame {
         try {
             FileWriter writer = new FileWriter(
              "C:\\Users\\Anthony\\Dropbox\\Comp Sci\\U8\\U8A2\\temp.txt"
-            	);
+             );
             PrintWriter out = new PrintWriter(writer);
 
             String file = "";
