@@ -2,7 +2,7 @@
 //
 /*  reads, generates, and sorts a list of basketball players' stats. */
 //  for AP, my best friend.
-/*  ----------------------- */
+/*  ---------------------- */
 
 import java.util.*;
 import javax.swing.*;
