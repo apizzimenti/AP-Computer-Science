@@ -20,6 +20,7 @@ public class Driver
         inventory.add(e);
         
         inventory.list();
+        inventory.add(new StockItem("Memes", 1000, 0.69, 69));
         e.setPrice(0.92);
         b.remove(6);
         c.add(24);

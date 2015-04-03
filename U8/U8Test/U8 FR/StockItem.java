@@ -44,7 +44,7 @@ public class StockItem {
     
     public String toString() {
         if (name.length() >= 8)
-            return(idnum + "\t" + name + "\t$" + price + "\t" + numOnShelf);
+            return(idnum + "\t" + name + "\t\t$" + price + "\t" + numOnShelf);
         else
             return(idnum + "\t" + name + "\t\t$" + price + "\t" + numOnShelf);
     }

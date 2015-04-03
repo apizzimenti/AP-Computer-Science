@@ -7,7 +7,7 @@ public class Store {
     }
     
     public void add(StockItem s) {
-        myStockList.add(s);
+        myStockList.add(0, s);
     }
     
     public double removeAll(int idnum) {
