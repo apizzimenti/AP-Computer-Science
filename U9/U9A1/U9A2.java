@@ -1,6 +1,6 @@
 // Anthony Pizzimenti
 //
-/* Driver for the Measurable interface */
+/* Driver for the Measurable interface with the accept() method */
 /* ------------------ */
 
 import javax.swing.*;
@@ -8,20 +8,20 @@ import java.awt.*;
 import java.io.*;
 import java.util.*;
 
-public class U9A1 extends JFrame {
+public class U9A2 extends JFrame {
 
     private JTextArea area = new JTextArea();
     private Font out = new Font("Monospaced", Font.BOLD, 12);
     private Container contain = getContentPane();
 
     public static void main(String[]args) {
-        U9A1 x = new U9A1();
+        U9A2 x = new U9A2();
         x.setSize(300, 500);
         x.setVisible(true);
         x.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
-    public U9A1() {
+    public U9A2() {
         testBBPlayer();
         testbankaccount();
         contain.add(area);
@@ -49,7 +49,8 @@ public class U9A1 extends JFrame {
         area.append("--------------\n\n");
         area.append("Minimum Points Per Game = " + set.getMin() + "\n\n");
         area.append("Maximum Points Per Game = " + set.getMax() + "\n\n");
-        area.append("Average Points Per Game = " + set.getAve() + "\n\n\n");
+        String init = String.format("%.2f", set.getAve());
+        area.append("Average Points Per Game = " + init + "\n\n\n");
     }
 
     public void testbankaccount() {
