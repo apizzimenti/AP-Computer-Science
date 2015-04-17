@@ -5,15 +5,15 @@
 /* ---------------------- */
 
 public class quiz implements Measurable {
-    
+
     private int score;
     private String grade;
-    
+
     public quiz(int a) {
         score = a;
         setGrade();
     }
-    
+
     public void setGrade() {
         if (score < 90 && score > 79) {
             grade = "B";
@@ -27,7 +27,7 @@ public class quiz implements Measurable {
             grade = "A";
         }
     }
-    
+
     public String getResult() {
         return grade;
     }
