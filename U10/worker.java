@@ -14,7 +14,7 @@ public class worker {
     
     public String getName() {
         String[]data = name.split(" ");
-        return data[1] + ", " + data[0].substring(0, 1);
+        return data[1] + ", " + data[0].substring(0, 1) + ".";
     }
 }
     

@@ -19,6 +19,7 @@ public class U10A1 extends JFrame {
     }
     
     public U10A1() {
+        area.setFont(except);
         contain.add(area);
         testHourly();
         testSalaried();
@@ -31,7 +32,7 @@ public class U10A1 extends JFrame {
         
         area.append("Test Hourly Worker Class\n");
         area.append("------------------------\n");
-        area.append("Wage for " + hour.getName() + " = " + pay);
+        area.append("Wage for " + hour.getName() + " = $" + pay);
     }
     
     public void testSalaried() {
@@ -40,7 +41,7 @@ public class U10A1 extends JFrame {
         
         area.append("\n\nTest Salaried Worker Class\n");
         area.append("--------------------------\n");
-        area.append("Wage for " + salary.getName() + " = " + pay);
+        area.append("Wage for " + salary.getName() + " = $" + pay);
     }
     
     public void testPiece() {
@@ -49,6 +50,6 @@ public class U10A1 extends JFrame {
         
         area.append("\n\nTest Piece Worker Class\n");
         area.append("-----------------------\n");
-        area.append("Wage for " + piece.getName() + " = " + pay);
+        area.append("Wage for " + piece.getName() + " = $" + pay);
     }
 }
