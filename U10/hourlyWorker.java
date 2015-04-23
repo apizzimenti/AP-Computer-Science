@@ -25,4 +25,3 @@ public class hourlyWorker extends worker {
         return wage;
     }
 }
-    

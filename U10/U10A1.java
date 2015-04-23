@@ -24,7 +24,6 @@ public class U10A1 extends JFrame {
         testSalaried();
         testPiece();
     }
-    
 
     public void testHourly() {
         hourlyWorker hour = new hourlyWorker("John Doe", 9.48, 43);
