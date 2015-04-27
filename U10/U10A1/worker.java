@@ -5,8 +5,8 @@
 
 public class worker {
      
-    public String name;
-    public double rate;
+    private String name;
+    private double rate;
     
     public double computePay(int hours) {
         return hours * rate;

@@ -8,8 +8,7 @@ public class salariedWorker extends worker {
     private int hours;
     
     public salariedWorker(String a, double b, int c) {
-        name = a;
-        rate = b;
+        super(a, b);
         hours = c;
     }
     
