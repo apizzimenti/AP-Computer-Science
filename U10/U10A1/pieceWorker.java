@@ -12,7 +12,7 @@ public class pieceWorker extends worker {
     }
     
     public double wage(int pieces) {
-        return computePay(pieces) + (rate * hours);
+        return computePay(pieces) + super.computePay(hours);
     }
     
     public double computePay(int pieces) {

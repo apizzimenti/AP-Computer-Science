@@ -8,6 +8,11 @@ public class worker {
     private String name;
     private double rate;
     
+    public worker(String a, double b) {
+        name = a;
+        rate = b;
+    }
+    
     public double computePay(int hours) {
         return hours * rate;
     }
