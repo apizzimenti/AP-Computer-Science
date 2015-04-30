@@ -20,6 +20,7 @@ public class line extends point {
             super.drawPoint(g);
             super.setX(10);
         }
-        super.setX(-10*length);
+        // resets x coordinate to original location
+        super.setX(-10 * length);
     }
 }
