@@ -13,14 +13,16 @@ public final class truck extends vehicle {
     }
     
     public void draw(Graphics g) {
+    	int a = super.getWheel();
+    	
         g.setColor(Color.blue);
         g.drawRect(super.getX(), super.getY() + 20, 40, 40);
         g.drawRect(super.getX() + 42, super.getY(), 160, 60);
-        g.drawOval(super.getX() + 2, super.getY() + 60, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 38, super.getY() + 60, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 44, super.getY() + 60, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 50, super.getY() + 60, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 144, super.getY() + 60, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 150, super.getY() + 60, super.getWheel(), super.getWheel());
+        g.drawOval(super.getX() + 2, super.getY() + 60, a, a);
+        g.drawOval(super.getX() + 34, super.getY() + 60, a, a);
+        g.drawOval(super.getX() + 44, super.getY() + 60, a, a);
+        g.drawOval(super.getX() + 50, super.getY() + 60, a, a);
+        g.drawOval(super.getX() + 144, super.getY() + 60, a, a);
+        g.drawOval(super.getX() + 150, super.getY() + 60, a, a);
     }
 }

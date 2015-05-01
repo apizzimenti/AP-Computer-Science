@@ -13,11 +13,12 @@ public final class car extends vehicle {
     }
     
     public void draw(Graphics g) {
+    	int a = super.getWheel();
+    	
         g.setColor(Color.red);
         g.drawRect(super.getX(), super.getY(), 30, 10);
         g.drawRect(super.getX() - 10, super.getY() + 10, 50, 10);
-        g.drawOval(super.getX(), super.getY() + 20, super.getWheel(), super.getWheel());
-        g.drawOval(super.getX() + 20, super.getY() + 20, super.getWheel(), super.getWheel());
-    }
-    
+        g.drawOval(super.getX(), super.getY() + 20, a, a);
+        g.drawOval(super.getX() + 20, super.getY() + 20, a, a);
+    } 
 }
