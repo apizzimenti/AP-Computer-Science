@@ -1,3 +1,9 @@
+// Anthony Pizzimenti
+//
+// fielder subclass, with assists, putouts, errors, and fielding pct
+/* for AP, my best friend. */
+/* ----------------------- */
+
 public class fielder extends BaseballPlayer {
 	
 	private int assists;
@@ -21,5 +27,4 @@ public class fielder extends BaseballPlayer {
 		String best = String.format("%.3f", fieldpct);
 		return super.toString() + "\nFielding Percentage: " + best + "\n\n";
 	}
-
 }

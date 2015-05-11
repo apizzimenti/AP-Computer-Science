@@ -1,3 +1,9 @@
+// Anthony Pizzimenti
+//
+// hitter subclass with at bat, hits, and batting ave
+/* for AP, my best friend. */
+/* ----------------------- */
+
 public class hitter extends BaseballPlayer {
 	
 	private int atbat;
@@ -18,5 +24,4 @@ public class hitter extends BaseballPlayer {
 		String best = String.format("%.3f", batave);
 		return super.toString() + "\nBatting Average: " + best + "\n\n";
 	}
-
 }

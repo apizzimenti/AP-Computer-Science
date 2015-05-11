@@ -1,3 +1,9 @@
+// Anthony Pizzimenti
+//
+// pitcher subclass, with innings pitched, earned runs, and earned runs ave
+/* for AP, my best friend. */
+/* ----------------------- */
+
 public class pitcher extends BaseballPlayer {
 	
 	private double inpitched;

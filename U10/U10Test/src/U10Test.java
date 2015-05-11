@@ -1,3 +1,9 @@
+// Anthony Pizzimenti
+//
+// driver for the BaseballPlayer() class
+/* for AP, my best friend. */
+/* ----------------------- */
+
 import java.util.ArrayList;
 import java.awt.Container;
 import java.awt.Font;
