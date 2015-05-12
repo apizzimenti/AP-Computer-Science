@@ -29,3 +29,9 @@ and binary search methods; Big O; applying these methods to arrays
 
 ####Unit 8
 Advanced Classes: using ``private``, ``static``, and ``final`` variable types; arraylists; reading from and writing to files;
+
+####Unit 9
+Interfaces and method overwriting
+
+####Unit 10
+Inheritance
