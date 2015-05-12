@@ -23,8 +23,7 @@ public class U10Test extends JFrame {
 		contain.add(area);
 		fill();
 		
-		for(int i = 0; i < players.size(); i++) {
-			BaseballPlayer x = players.get(i);
+		for(BaseballPlayer x : players) {
 			x.setStat();
 			area.append(x.toString());
 		}
