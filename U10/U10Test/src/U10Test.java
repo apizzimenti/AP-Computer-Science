@@ -13,7 +13,7 @@ import javax.swing.*;
 public class U10Test extends JFrame {
 
 	private JTextArea area = new JTextArea();
-	private ArrayList<BaseballPlayer> players = new ArrayList<BaseballPlayer>();
+	private ArrayList<BaseballPlayer> player = new ArrayList<BaseballPlayer>();
 	
 	public U10Test() {
 		super("Unit 10 Test");
@@ -23,19 +23,19 @@ public class U10Test extends JFrame {
 		contain.add(area);
 		fill();
 		
-		for(BaseballPlayer x : players) {
+		for(BaseballPlayer x : player) {
 			x.setStat();
 			area.append(x.toString());
 		}
 	}
 	
 	public void fill() {
-		players.add(new hitter("Tyler Lawson", 29, 78, 25));
-		players.add(new hitter("Jason Brown", 16, 54, 13));
-		players.add(new pitcher("Tom Jensen", 9, 50.7, 18));
-		players.add(new pitcher("Jason Brown", 10, 72.3, 15));
-		players.add(new fielder("Willie Starks", 30, 11, 97, 4));
-		players.add(new fielder("Jason Brown", 16, 23, 6, 3));
+		player.add(new hitter("Tyler Lawson", 29, 78, 25));
+		player.add(new hitter("Jason Brown", 16, 54, 13));
+		player.add(new pitcher("Tom Jensen", 9, 50.7, 18));
+		player.add(new pitcher("Jason Brown", 10, 72.3, 15));
+		player.add(new fielder("Willie Starks", 30, 11, 97, 4));
+		player.add(new fielder("Jason Brown", 16, 23, 6, 3));
 	}
 	
 	public static void main(String[]args) {
