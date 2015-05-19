@@ -16,9 +16,10 @@ public class U10FR {
 		list.add(new Trapezoid("QRST", new Point(3,5), new Point(2,2), new Point(9,2), new Point(6,5)));   
 		System.out.println("Label\tPerimeter\tArea\n");
 		
-		for(int i = 0; i < list.size(); i++) {
-			Quadrilateral x = list.get(i);
-			System.out.println(x.getLabel() + "\t" + String.format("%.1f", x.perimeter()) + "\t\t" + x.area());
+		for(Quadrilateral x : list) {
+			String per = String.format("%.1f", x.perimeter());
+			String ar = String.format("%.1f", x.area());
+			System.out.println(x.getLabel() + "\t" + per + "\t\t" + ar);
 		}
 	}
 }  
