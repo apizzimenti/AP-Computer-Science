@@ -21,5 +21,15 @@ public class U10FR {
 			String ar = String.format("%.1f", x.area());
 			System.out.println(x.getLabel() + "\t" + per + "\t\t" + ar);
 		}
+		
+		// printing can also be formatted as follows:
+		/* 
+		for(int i = 0; i < list.size(); i++) {
+			Quadrilateral x = list.get(i);
+			String per = String.format("%.1f", x.perimeter());
+			String ar = String.format("%.1f", x.area());
+			System.out.println(x.getLabel() + "\t" + per + "\t\t" + ar);
+		}
+		*/
 	}
 }  
