@@ -6,7 +6,6 @@ public class Trapezoid extends Quadrilateral {
 	private Point topRight;
 
 	public Trapezoid(String lbl, Point tL, Point bL, Point bR, Point tR) {
-		//<for you to complete 4 points>
 		super(lbl);
 		topLeft = tL;
 		botLeft = bL;
