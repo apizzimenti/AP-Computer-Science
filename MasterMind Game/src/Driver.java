@@ -17,13 +17,14 @@ public class Driver {
 			} else {
 				System.out.println(best);
 			}
+			count += 1;
 		}
 		
 		if (count == 0) {
 			x.editPoints(-8);
 			System.out.println("Wow, first try!");
 			System.out.println("You got " + x.getPoints() + " points!");
-		} else if (count == 9){
+		} else if (count == 10){
 			System.out.println("The word you were looking for was " + fw + ".");
 			System.out.println("You only got " + x.getPoints() + " points.");
 		} else {

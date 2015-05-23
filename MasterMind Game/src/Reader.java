@@ -8,7 +8,7 @@ public class Reader {
 	private int points;
 	
 	public Reader() {
-		word = "well";
+		word = read();
 	}
 	
 	public String getWord() {
@@ -29,7 +29,7 @@ public class Reader {
 		int finder = (int)(Math.random() * 50);
 		try {
 			Scanner in = new Scanner(new File(
-					"//Users//Anthony//Dropbox//Comp Sci//U10//MasterMind Game//src//Words.txt"));
+					"//Users//Anthony//Dropbox//Comp Sci//MasterMind Game//src//Words.txt"));
 			for (int i = 0; i < finder; i++){
 					 last = in.nextLine();
 			}
