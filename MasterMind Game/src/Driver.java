@@ -3,14 +3,6 @@ import javax.swing.JOptionPane;
 public class Driver {
 	
 	public static void main(String[]args) {
-		Driver x = new Driver();
-	}
-	
-	public Driver() {
-		go();
-	}
-	
-	public void go() {
 		Reader x = new Reader();
 		String fw = x.getWord();
 		int count = 0;
