@@ -1,8 +1,21 @@
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import java.awt.*;
 
-public class Driver {
+public class Driver extends JFrame {
+	
+	private JTextArea area = new JTextArea();
+	private Container container = getContentPane();
 	
 	public static void main(String[]args) {
+		Driver x = new Driver();
+		x.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	}
+	
+	public Driver() {
+		super.setVisible(true);
+		super.setSize(500, 500);
+		container.add(area);
+		
 		Reader x = new Reader();
 		String fw = x.getWord();
 		int count = 0;
@@ -15,20 +28,20 @@ public class Driver {
 				x.editPoints(100 - (i * 10));
 				break;
 			} else {
-				System.out.println(best);
+				area.append(best + "\n");
 			}
 			count += 1;
 		}
 		
 		if (count == 0) {
 			x.editPoints(-8);
-			System.out.println("Wow, first try!");
-			System.out.println("You got " + x.getPoints() + " points!");
+			area.append("\nWow, first try!");
+			area.append("\nYou got " + x.getPoints() + " points!");
 		} else if (count == 10){
-			System.out.println("The word you were looking for was " + fw + ".");
-			System.out.println("You only got " + x.getPoints() + " points.");
+			area.append("\nThe word you were looking for was " + fw + ". ");
+			area.append("\nYou only got " + x.getPoints() + " points.");
 		} else {
-			System.out.println("Nice work, you got " + x.getPoints() + " points.");
+			area.append("\nNice work, you got " + x.getPoints() + " points.");
 		}
 	}
 }
