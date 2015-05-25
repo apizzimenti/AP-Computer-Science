@@ -14,6 +14,7 @@ public class Driver extends JFrame {
 	public Driver() {
 		super.setVisible(true);
 		super.setSize(500, 500);
+		area.setEditable(false);
 		container.add(area);
 		
 		Reader x = new Reader();
